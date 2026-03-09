@@ -1,27 +1,15 @@
-// Fungsi untuk masuk ke website
-function enterWebsite() {
-  const intro = document.getElementById("introScreen");
-  intro.classList.add("hide");
-
-  setTimeout(() => {
-    intro.style.display = "none";
-  }, 800);
+function goToPage2() {
+    window.location.href = 'page2.html';
 }
 
-// Fungsi scroll reveal
-function revealOnScroll() {
-  const reveals = document.querySelectorAll(".scroll-reveal");
-
-  reveals.forEach((element) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const revealPoint = 150;
-
-    if (elementTop < windowHeight - revealPoint) {
-      element.classList.add("active");
-    }
-  });
+function goToNotes() {
+    window.location.href = 'notes.html';
 }
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+function goBack() {
+    window.location.href = 'index.html';
+}
+
+function goToMusic() {
+    window.location.href = 'music.html';
+}
